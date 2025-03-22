@@ -9,12 +9,13 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background-color: #0d1b2a;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            position: relative;
         }
 
         .container {
@@ -25,13 +26,9 @@
         }
 
         h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .construction-icon {
-            font-size: 4rem;
+            color: #ffffff;
+            font-size: 3rem;
+            text-align: center;
             margin-bottom: 1rem;
         }
 
@@ -41,37 +38,19 @@
             line-height: 1.6;
         }
 
-        .progress-bar {
-            width: 200px;
-            height: 6px;
-            background: #ddd;
-            border-radius: 3px;
-            margin: 20px auto;
-            overflow: hidden;
-        }
-
-        .progress {
-            width: 30%;
-            height: 100%;
-            background: #3498db;
-            animation: progress 1.5s ease-in-out infinite;
-        }
-
-        @keyframes progress {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(400%); }
+        .construction-note {
+            color: #142d4c;
+            font-size: 0.9rem;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="construction-icon">🏗️</div>
-        <h1>Site em Construção</h1>
-        <p>Estamos trabalhando para trazer algo incrível!</p>
-        <p>Em breve, novidades por aqui.</p>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
+        <h1>zapelini.ia</h1>
+        <p class="construction-note">site em construção</p>
     </div>
 </body>
 </html>
